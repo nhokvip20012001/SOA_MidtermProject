@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% from 'bootstrap/form.html' import render_form %}
+
+{% block title %}
+My Flask App
+{% endblock %}
+
+{% block page_content %}
+
+<form method="POST">
+    <div style="margin-top: 25px; margin-bottom: 50px;">
+        <h2 class="text-primary">Sign up for a Forum Account</h2>
+            {{ render_form(form) }}
+    </div>
+</form>
+{% endblock %}

@@ -1,0 +1,89 @@
+<section>
+    <div class="container">
+        <div class="text-center">
+            <p class="title">Orders</p>
+            <h5>{{today}}</h5>
+            {{#unless (eq session.user.role 'chef')}}<button class="btn btn-warning" data-bs-toggle="modal"
+                data-bs-target="#newOrder">New Order</button>{{/unless}}
+            <hr>
+        </div>
+
+        <div class="list-group">
+            <div class="row row-cols-2">
+                <!-- If the user is "Chef", he can only view orders with 'Processing' status-->
+                {{#if (eq session.user.role 'chef')}}
+                {{#each orders}}
+                {{#if (eq status 'Processing')}}
+                <div class="col">
+                    <a href="/order/{{_id}}" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <p class="mb-1"><strong style="font-size:20px">Order ID: {{_id}}</strong></p>
+                            <p>Status:<span {{#if (eq status "Processing" )}}class="text-danger"
+                                    {{else}}class="text-success" {{/if}}> {{status}}</span></p>
+                        </div>
+                        <div class="d-flex w-100 justify-content-between">
+                            <div>
+                                <p class="mb-1"><strong>Table:</strong> {{table}}</p>
+                                {{#if cart.totalPrice}}<p class="mb-1"><strong>Total:</strong> {{cart.totalPrice}}$</p>
+                                {{/if}}
+                            </div>
+                            <div style="text-align: right">
+                                <small class="text-muted">Check-in: {{getDateTime checkin}}</small><br>
+                                {{#if checkout}}<small class="text-muted">Check-out: {{checkout}}</small>{{/if}}
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {{/if}}
+                {{/each}}
+                <!-- Staff and Manager can see all the orders-->
+                {{else}}
+                {{#each orders}}
+                <div class="col">
+                    <a {{#if (eq status "Processing" )}}href="/menu/{{_id}}" {{else}}href="/order/{{_id}}" {{/if}}
+                        class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <p class="mb-1"><strong style="font-size:20px">Order ID: {{_id}}</strong></p>
+                            <p>Status:<span {{#if (eq status "Processing" )}}class="text-danger"
+                                    {{else}}class="text-success" {{/if}}> {{status}}</span></p>
+                        </div>
+                        <div class="d-flex w-100 justify-content-between">
+                            <div>
+                                <p class="mb-1"><strong>Table:</strong> {{table}}</p>
+                                {{#if cart.totalPrice}}<p class="mb-1"><strong>Total:</strong> {{cart.totalPrice}}$</p>
+                                {{/if}}
+                            </div>
+                            <div style="text-align: right">
+                                <small class="text-muted">Check-in: {{getDateTime checkin}}</small><br>
+                                {{#if checkout}}<small class="text-muted">Check-out: {{getDateTime checkout}}</small>{{/if}}
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {{/each}}
+                {{/if}}
+            </div>
+        </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="newOrder" tabindex="-1" aria-hidden="true">
+    <form action="/order" method="post">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Payment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="table">Table Number:</label>
+                    <input type="number" id="table" name="table" required>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <input type="submit" class="btn btn-danger" value="Confirm">
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

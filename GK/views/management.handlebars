@@ -1,0 +1,82 @@
+<section id="management">
+    <div class="container text">
+        <p class="title text-center">Receipts</p>
+        <div class="card">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#menu1">Today</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" data-bs-toggle="tab" href="#menu2">This week</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" data-bs-toggle="tab" href="#menu3">This month</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" data-bs-toggle="tab" href="#menu4">This year</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane container active" id="menu1" role="tabpanel">
+                        <br>
+                        <div class="text-center">
+                            <h2>{{ today }}</h2>
+                            <p style='font-size: 24px'>Total orders: {{#each revenue}}{{ this.count }}{{/each}}</p>
+                        </div>
+                        <div class="row row-cols-2">
+                            {{#each orders}}
+                            <div class="col">
+                                <a {{#if (eq status "Processing" )}}href="/menu/{{_id}}" {{else}}href="/order/{{_id}}"
+                                    {{/if}} class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <p class="mb-1"><strong style="font-size:20px">Order ID: {{_id}}</strong></p>
+                                        <p>Status:<span {{#if (eq status "Processing" )}}class="text-danger"
+                                                {{else}}class="text-success" {{/if}}> {{status}}</span></p>
+                                    </div>
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <div>
+                                            <p class="mb-1"><strong>Table:</strong> {{table}}</p>
+                                            {{#if cart.totalPrice}}<p class="mb-1"><strong>Total:</strong>
+                                                {{cart.totalPrice}}$</p>
+                                            {{/if}}
+                                        </div>
+                                        <div style="text-align: right">
+                                            <small class="text-muted">Check-in: {{getDateTime checkin}}</small><br>
+                                            {{#if checkout}}<small class="text-muted">Check-out: {{getDateTime
+                                                checkout}}</small>{{/if}}
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            {{/each}}
+                        </div>
+                        <div class="d-flex flex-row-reverse">
+                            <p style='font-size: 24px'>Total revenue: {{#each revenue}}<strong
+                                    style="color: goldenrod">{{ this.sum }}$</strong>{{/each}}</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane container fade" id="menu2" role="tabpanel">
+                        <h1 class="text-center text-uppercase">This week</h1>
+                        <br>
+                        <br>
+
+                    </div>
+                    <div class="tab-pane container fade" id="menu3" role="tabpanel">
+                        
+
+                    </div>
+                    <div class="tab-pane container fade" id="menu4" role="tabpanel">
+                        <h1 class="text-center text-uppercase">This year</h1>
+                        <br>
+                        <br>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

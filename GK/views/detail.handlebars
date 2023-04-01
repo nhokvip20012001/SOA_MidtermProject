@@ -1,0 +1,42 @@
+<section>
+    <div class="container">
+        {{#each order}}
+        {{#if (eq status 'Completed')}}
+        <h1 class="text-center">Order Detail</h1>
+        <table class="table">
+            <thead class="table-dark table-bordered">
+                <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Dish</th>
+                    <th scope="col">Unit Price</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each cart.items}}
+                <tr>
+                    <th scope="row">{{inc @index}}</th>
+                    <td>{{this.item.name}}</td>
+                    <td>{{this.item.price}}$</td>
+                    <td>{{this.qty}}</td>
+                    <td>{{this.price}}$</td>
+                </tr>
+                {{/each}}
+            </tbody>
+            <tfoot>
+                {{#with cart}}
+                <tr>
+                    <th scope="col">Total</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col">{{this.totalQty}}</th>
+                    <th scope="col">{{this.totalPrice}}$</th>
+                </tr>
+                {{/with}}
+            </tfoot>
+        </table>
+        {{/if}}
+        {{/each}}
+    </div>
+</section>

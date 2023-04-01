@@ -1,0 +1,31 @@
+{
+  "name": "gk",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --inspect app.js"
+  },
+  "dependencies": {
+    "bootstrap-toggle": "^2.2.2",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-handlebars": "^6.0.7",
+    "express-session": "^1.17.3",
+    "flash": "^1.1.0",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "mongodb": "^5.1.0",
+    "mongoose": "^7.0.0",
+    "mongosh": "^1.8.0",
+    "morgan": "~1.9.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.21",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "mysql-import": "^5.0.26"
+  }
+}

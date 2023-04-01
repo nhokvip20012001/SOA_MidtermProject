@@ -1,0 +1,22 @@
+[{
+  "_id": {
+    "$oid": "640e0beaa35ef709b147e80c"
+  },
+  "username": "manager_cute",
+  "password": "123456",
+  "role": "manager"
+},{
+  "_id": {
+    "$oid": "640e0c2da35ef709b147e80d"
+  },
+  "username": "staff_cute",
+  "password": "123456",
+  "role": "staff"
+},{
+  "_id": {
+    "$oid": "640e0c36a35ef709b147e80e"
+  },
+  "username": "chef_cute",
+  "password": "123456",
+  "role": "chef"
+}]

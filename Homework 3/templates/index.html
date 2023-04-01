@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% from 'bootstrap/form.html' import render_form %}
+
+{% block title %}
+    My Flask App
+{% endblock %}
+
+{% block page_content %}
+<div style="margin-top: 25px; margin-bottom: 50px;">
+    <h1>
+        {% if name %}
+        Hello {{ name }}!
+        {% else %}
+        Hello World!
+        {% endif %}
+    </h1>
+
+    <div style="margin-top: 10px;">
+        {% if not known %}
+        <p>Nice to meet you!</p>
+        {% else %}
+        <p>Glad to see you again!</p>
+        {% endif %}
+    </div>
+
+    <div style="margin-top: 50px;">
+        {{ render_form(form) }}
+    </div>
+
+    <div style="margin-top: 50px;">
+        <p><small>
+            The current local date and time is <strong>{{ moment(current_time).format('LLL') }}</strong>.<br/>
+            That was {{ moment(current_time).fromNow(refresh=True) }}.
+        </small></p>
+    </div>
+</div>
+{% endblock %}

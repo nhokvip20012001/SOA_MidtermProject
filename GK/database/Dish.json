@@ -1,0 +1,406 @@
+[{
+  "_id": {
+    "$oid": "6404a7f2bab3fc49fbf79fe2"
+  },
+  "name": "Cheese Potato Burger",
+  "category": "Burger",
+  "price": 5,
+  "description": "Beef, Potato, Cheese, Salad",
+  "image": "../assets/img/menu/burger/1.jpg",
+  "status": null,
+  "dishID": "B01"
+},{
+  "_id": {
+    "$oid": "6404a97ebab3fc49fbf79fe3"
+  },
+  "name": "Double Cheese Burger",
+  "category": "Burger",
+  "price": 6.25,
+  "description": "Beef, Double Cheese, Salad",
+  "image": "../assets/img/menu/burger/2.jpg",
+  "status": null,
+  "dishID": "B02"
+},{
+  "_id": {
+    "$oid": "6404a9b3bab3fc49fbf79fe4"
+  },
+  "name": "Bacon Cheese Burger",
+  "category": "Burger",
+  "price": 4.5,
+  "description": "Bacon, Cheese, Salad",
+  "image": "../assets/img/menu/burger/3.jpg",
+  "status": null,
+  "dishID": "B03"
+},{
+  "_id": {
+    "$oid": "6404a9e0bab3fc49fbf79fe5"
+  },
+  "name": "Fish Fillet Burger",
+  "category": "Burger",
+  "price": 4.15,
+  "description": "Fish, Cheese, Salad",
+  "image": "../assets/img/menu/burger/4.jpg",
+  "dishID": "B04"
+},{
+  "_id": {
+    "$oid": "6404aa0abab3fc49fbf79fe6"
+  },
+  "name": "Shrimp Cheese Burger",
+  "category": "Burger",
+  "price": 7.55,
+  "description": "Shrimp, Cheese, Salad",
+  "image": "../assets/img/menu/burger/5.jpg",
+  "dishID": "B05"
+},{
+  "_id": {
+    "$oid": "6404aa37bab3fc49fbf79fe7"
+  },
+  "name": "Vietnamese Banh Mi",
+  "category": "Burger",
+  "price": 3.65,
+  "description": "Grilled Pork, Cucumber",
+  "image": "../assets/img/menu/burger/6.jpg",
+  "dishID": "B06"
+},{
+  "_id": {
+    "$oid": "6404aa51bab3fc49fbf79fe8"
+  },
+  "name": "Vietnamese Banh Mi Extra",
+  "category": "Burger",
+  "price": 4.05,
+  "description": "Grilled Pork, Fried Egg, Cucumber",
+  "image": "../assets/img/menu/burger/7.jpg",
+  "dishID": "B07"
+},{
+  "_id": {
+    "$oid": "6404aa7cbab3fc49fbf79fe9"
+  },
+  "name": "Grilled Beef Banh Mi",
+  "category": "Burger",
+  "price": 5.4,
+  "description": "Grilled Beef, Cucumber",
+  "image": "../assets/img/menu/burger/8.jpg",
+  "dishID": "B08"
+},{
+  "_id": {
+    "$oid": "6404aaa6bab3fc49fbf79fea"
+  },
+  "name": "Char Siu Banh Mi",
+  "category": "Burger",
+  "price": 5.25,
+  "description": "Char Siu Pork, Fried Egg, Cucumber",
+  "image": "../assets/img/menu/burger/9.jpg",
+  "dishID": "B09"
+},{
+  "_id": {
+    "$oid": "6404aacbbab3fc49fbf79feb"
+  },
+  "name": "Grilled Fish Banh Mi",
+  "category": "Burger",
+  "price": 3.5,
+  "description": "Grilled Fish, Laksa Leaves",
+  "image": "../assets/img/menu/burger/10.jpg",
+  "dishID": "B10"
+},{
+  "_id": {
+    "$oid": "6404ada6bab3fc49fbf79fec"
+  },
+  "name": "Bolognese Spaghetti",
+  "category": "Pasta",
+  "price": 6.75,
+  "description": "Tomato Sauce, Ground Beef",
+  "image": "../assets/img/menu/pasta/1.jpg",
+  "status": null,
+  "dishID": "PA01"
+},{
+  "_id": {
+    "$oid": "6404ae31bab3fc49fbf79fed"
+  },
+  "name": "Creamy Italian Pasta",
+  "category": "Pasta",
+  "price": 9,
+  "description": "Creamy Sauce, Mushroom",
+  "image": "../assets/img/menu/pasta/2.jpg",
+  "dishID": "PA02"
+},{
+  "_id": {
+    "$oid": "6404ae8bbab3fc49fbf79fee"
+  },
+  "name": "Green Mexican Spaghetti",
+  "category": "Pasta",
+  "price": 8.5,
+  "description": "Creamy Sauce, Cilantro, Ground Beef",
+  "image": "../assets/img/menu/pasta/3.jpg",
+  "dishID": "PA03"
+},{
+  "_id": {
+    "$oid": "6404aee3bab3fc49fbf79fef"
+  },
+  "name": "Meatballs Spaghetti",
+  "category": "Pasta",
+  "price": 7.35,
+  "description": "Tomato Sauce, Meatballs",
+  "image": "../assets/img/menu/pasta/4.jpg",
+  "dishID": "PA04"
+},{
+  "_id": {
+    "$oid": "6404af81bab3fc49fbf79ff0"
+  },
+  "name": "Roasted Spaghetti Squash",
+  "category": "Pasta",
+  "price": 8,
+  "description": "Squash, Parmesan, Browned Butter",
+  "image": "../assets/img/menu/pasta/5.jpg",
+  "dishID": "PA05"
+},{
+  "_id": {
+    "$oid": "6404b014bab3fc49fbf79ff1"
+  },
+  "name": "Italian Pasta Carbonara",
+  "category": "Pasta",
+  "price": 10,
+  "description": "Bacon, Spaghetti, Parmesan",
+  "image": "../assets/img/menu/pasta/6.jpg",
+  "dishID": "PA06"
+},{
+  "_id": {
+    "$oid": "6404b123bab3fc49fbf79ff2"
+  },
+  "name": "Ricetta Pasta Vegetariana",
+  "category": "Pasta",
+  "price": 7.45,
+  "description": "Zucchini, Bell Pepper, Onion, Mushroom",
+  "image": "../assets/img/menu/pasta/7.jpg",
+  "dishID": "PA07"
+},{
+  "_id": {
+    "$oid": "6404b1f7bab3fc49fbf79ff3"
+  },
+  "name": "Chicken Alfredo Pasta",
+  "category": "Pasta",
+  "price": 9.25,
+  "description": "Creamy Sauce, Chicken Breast",
+  "image": "../assets/img/menu/pasta/8.jpg"
+},{
+  "_id": {
+    "$oid": "6405819dbf965f43d9a067ff"
+  },
+  "name": "Fresh Seafood Pizza",
+  "category": "Pizza",
+  "price": 15.55,
+  "description": "Shrimp, Squish, Pineapple",
+  "image": "../assets/img/menu/pizza/1.jpg",
+  "status": null,
+  "dishID": "PI01"
+},{
+  "_id": {
+    "$oid": "64058280bf965f43d9a06800"
+  },
+  "name": "Pizza Veggie Mania",
+  "category": "Pizza",
+  "price": 13.5,
+  "description": "Bell Pepper, Pineapple, Olive, Mushroom",
+  "image": "../assets/img/menu/pizza/2.jpg",
+  "dishID": "PI02"
+},{
+  "_id": {
+    "$oid": "64058326bf965f43d9a06801"
+  },
+  "name": "Pizza Surf & Turf",
+  "category": "Pizza",
+  "price": 17.5,
+  "description": "Mexican Beef, Shrimp, Tomato",
+  "image": "../assets/img/menu/pizza/3.jpg",
+  "dishID": "PI03"
+},{
+  "_id": {
+    "$oid": "640583c6bf965f43d9a06802"
+  },
+  "name": "Pizza Hawaiian Pineapple",
+  "category": "Pizza",
+  "price": 15,
+  "description": "Ham, Pineapple",
+  "image": "../assets/img/menu/pizza/4.jpg",
+  "dishID": "PI04"
+},{
+  "_id": {
+    "$oid": "6405840dbf965f43d9a06803"
+  },
+  "name": "Pizza Pepperoni Feast",
+  "category": "Pizza",
+  "price": 16,
+  "description": "Pepperoni Sausage Extra",
+  "image": "../assets/img/menu/pizza/5.jpg",
+  "dishID": "PI05"
+},{
+  "_id": {
+    "$oid": "6405847cbf965f43d9a06804"
+  },
+  "name": "Pizza Saigon Mania",
+  "category": "Pizza",
+  "price": 17.75,
+  "description": "Polony, Salted Egg, Corn",
+  "image": "../assets/img/menu/pizza/6.jpg",
+  "dishID": "PI06"
+},{
+  "_id": {
+    "$oid": "6405856dbf965f43d9a06805"
+  },
+  "name": "Pizza Kiddo Mania",
+  "category": "Pizza",
+  "price": 16,
+  "description": "Sowbelly, Corn, Quail Egg",
+  "image": "../assets/img/menu/pizza/7.jpg",
+  "dishID": "PI07"
+},{
+  "_id": {
+    "$oid": "64058614bf965f43d9a06806"
+  },
+  "name": "Pizza Cheesy Chicken Bacon",
+  "category": "Pizza",
+  "price": 20,
+  "description": "Sowbelly, Chicken",
+  "image": "../assets/img/menu/pizza/8.jpg",
+  "dishID": "PI08"
+},{
+  "_id": {
+    "$oid": "640586b2bf965f43d9a06807"
+  },
+  "name": "Pizza Teriyaki Chicken",
+  "category": "Pizza",
+  "price": 16.75,
+  "description": "Chicken, Mushroom, Onion",
+  "image": "../assets/img/menu/pizza/9.jpg",
+  "dishID": "PI09"
+},{
+  "_id": {
+    "$oid": "640587c0bf965f43d9a06808"
+  },
+  "name": "Pizza MegaCheese",
+  "category": "Pizza",
+  "price": 17,
+  "description": "Cheese, Cheese and Cheese",
+  "image": "../assets/img/menu/pizza/10.jpg",
+  "dishID": "PI10"
+},{
+  "_id": {
+    "$oid": "64058b48bf965f43d9a06809"
+  },
+  "name": "Traditional Fried Chicken",
+  "category": "Chicken",
+  "price": 10,
+  "description": "8 Chicken Drumsticks",
+  "image": "../assets/img/menu/chicken/1.jpg",
+  "status": null,
+  "dishID": "C1"
+},{
+  "_id": {
+    "$oid": "64058bdebf965f43d9a0680a"
+  },
+  "name": "Korean Fried Chicken",
+  "category": "Chicken",
+  "price": 11.5,
+  "description": "Chicken Breasts with Gochujang Sauce",
+  "image": "../assets/img/menu/chicken/2.jpg",
+  "dishID": "C2"
+},{
+  "_id": {
+    "$oid": "64058c19bf965f43d9a0680b"
+  },
+  "name": "Teriyaki Japanese Chicken",
+  "category": "Chicken",
+  "price": 12,
+  "description": "Chicken Breasts with Teriyaki Sauce",
+  "image": "../assets/img/menu/chicken/3.jpg",
+  "dishID": "C3"
+},{
+  "_id": {
+    "$oid": "64058c6fbf965f43d9a0680c"
+  },
+  "name": "Grilled BBQ Chicken",
+  "category": "Chicken",
+  "price": 11.75,
+  "description": "Chicken Thigh with BBQ Sauce",
+  "image": "../assets/img/menu/chicken/4.jpg",
+  "dishID": "C4"
+},{
+  "_id": {
+    "$oid": "64058ccebf965f43d9a0680d"
+  },
+  "name": "Vietnamese Fish Sauce Wings",
+  "category": "Chicken",
+  "price": 15,
+  "description": "Chicken Wings with Fish Sauce",
+  "image": "../assets/img/menu/chicken/5.jpg",
+  "dishID": "C5"
+},{
+  "_id": {
+    "$oid": "64058e7abf965f43d9a0680e"
+  },
+  "name": "Blue Lagoon Cocktail",
+  "category": "Drinks",
+  "price": 6.75,
+  "description": "Vodka, Blue Curacao, Lemonade",
+  "image": "../assets/img/menu/drinks/1.jpg",
+  "dishID": "D1"
+},{
+  "_id": {
+    "$oid": "64058eeabf965f43d9a0680f"
+  },
+  "name": "Tommy's Margarita Cocktail",
+  "category": "Drinks",
+  "price": 7,
+  "description": "Tequila, Lime Juice",
+  "image": "../assets/img/menu/drinks/2.jpg",
+  "dishID": "D2"
+},{
+  "_id": {
+    "$oid": "64058fc2bf965f43d9a06810"
+  },
+  "name": "Gin Tonic Cocktail",
+  "category": "Drinks",
+  "price": 6.5,
+  "description": "Gin, Elderflower, Tonic Water",
+  "image": "../assets/img/menu/drinks/3.jpg",
+  "dishID": "D3"
+},{
+  "_id": {
+    "$oid": "64059030bf965f43d9a06811"
+  },
+  "name": "Italian Negroni Cocktail",
+  "category": "Drinks",
+  "price": 8.25,
+  "description": "Gin, Sweet Vermouth, Campari, Orange",
+  "image": "../assets/img/menu/drinks/4.jpg",
+  "dishID": "D4"
+},{
+  "_id": {
+    "$oid": "6405910bbf965f43d9a06812"
+  },
+  "name": "Fresh Mint Mojito",
+  "category": "Drinks",
+  "price": 7.75,
+  "description": "White Rum, Mint Leaves, Lime",
+  "image": "../assets/img/menu/drinks/5.jpg",
+  "dishID": "D5"
+},{
+  "_id": {
+    "$oid": "640591cbbf965f43d9a06813"
+  },
+  "name": "Tropical Strawberry Soda",
+  "category": "Drinks",
+  "price": 6,
+  "description": "Sparkling Water, Strawberry Syrup",
+  "image": "../assets/img/menu/drinks/6.jpg",
+  "dishID": "D6"
+},{
+  "_id": {
+    "$oid": "64059279bf965f43d9a06814"
+  },
+  "name": "Lavender Blueberry Vodka Soda",
+  "category": "Drinks",
+  "price": 6.75,
+  "description": "Vodka, Sparkling Water, Blueberry Syrup",
+  "image": "../assets/img/menu/drinks/7.jpg",
+  "dishID": "D7"
+}]

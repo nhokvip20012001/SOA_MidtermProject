@@ -1,0 +1,595 @@
+[{
+  "_id": {
+    "$oid": "642470eb6cb507653ed91d23"
+  },
+  "cart": {
+    "items": {
+      "6404a7f2bab3fc49fbf79fe2": {
+        "item": {
+          "_id": "6404a7f2bab3fc49fbf79fe2",
+          "name": "Cheese Potato Burger",
+          "category": "Burger",
+          "price": 5,
+          "description": "Beef, Potato, Cheese, Salad",
+          "image": "../assets/img/menu/burger/1.jpg",
+          "status": null
+        },
+        "qty": 2,
+        "price": 10,
+        "status": "Done"
+      },
+      "6404a97ebab3fc49fbf79fe3": {
+        "item": {
+          "_id": "6404a97ebab3fc49fbf79fe3",
+          "name": "Double Cheese Burger",
+          "category": "Burger",
+          "price": 6.25,
+          "description": "Beef, Double Cheese, Salad",
+          "image": "../assets/img/menu/burger/2.jpg",
+          "status": null
+        },
+        "qty": 1,
+        "price": 6.25,
+        "status": "Done"
+      },
+      "64058eeabf965f43d9a0680f": {
+        "item": {
+          "_id": "64058eeabf965f43d9a0680f",
+          "name": "Tommy's Margarita Cocktail",
+          "category": "Drinks",
+          "price": 7,
+          "description": "Tequila, Lime Juice",
+          "image": "../assets/img/menu/drinks/2.jpg"
+        },
+        "qty": 1,
+        "price": 7,
+        "status": "Done"
+      }
+    },
+    "totalQty": 4,
+    "totalPrice": 23.25
+  },
+  "table": 2,
+  "checkout": {
+    "$date": "2023-03-29T17:14:43.244Z"
+  },
+  "status": "Completed",
+  "checkin": {
+    "$date": "2023-03-29T17:10:03.953Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "642470ef6cb507653ed91d26"
+  },
+  "cart": {
+    "items": {
+      "6404a97ebab3fc49fbf79fe3": {
+        "item": {
+          "_id": "6404a97ebab3fc49fbf79fe3",
+          "name": "Double Cheese Burger",
+          "category": "Burger",
+          "price": 6.25,
+          "description": "Beef, Double Cheese, Salad",
+          "image": "../assets/img/menu/burger/2.jpg",
+          "status": null
+        },
+        "qty": 3,
+        "price": 18.75,
+        "status": "Processing"
+      },
+      "64059279bf965f43d9a06814": {
+        "item": {
+          "_id": "64059279bf965f43d9a06814",
+          "name": "Lavender Blueberry Vodka Soda",
+          "category": "Drinks",
+          "price": 6.75,
+          "description": "Vodka, Sparkling Water, Blueberry Syrup",
+          "image": "../assets/img/menu/drinks/7.jpg"
+        },
+        "qty": 1,
+        "price": 6.75,
+        "status": "Processing"
+      },
+      "64058c6fbf965f43d9a0680c": {
+        "item": {
+          "_id": "64058c6fbf965f43d9a0680c",
+          "name": "Grilled BBQ Chicken",
+          "category": "Chicken",
+          "price": 11.75,
+          "description": "Chicken Thigh with BBQ Sauce",
+          "image": "../assets/img/menu/chicken/4.jpg"
+        },
+        "qty": 1,
+        "price": 11.75,
+        "status": "Processing"
+      },
+      "6404a9e0bab3fc49fbf79fe5": {
+        "item": {
+          "_id": "6404a9e0bab3fc49fbf79fe5",
+          "name": "Fish Fillet Burger",
+          "category": "Burger",
+          "price": 4.15,
+          "description": "Fish, Cheese, Salad",
+          "image": "../assets/img/menu/burger/4.jpg"
+        },
+        "qty": 1,
+        "price": 4.15,
+        "status": "Processing"
+      }
+    },
+    "totalQty": 6,
+    "totalPrice": 41.4
+  },
+  "table": 3,
+  "checkout": {
+    "$date": "2023-03-29T17:29:40.135Z"
+  },
+  "status": "Completed",
+  "checkin": {
+    "$date": "2023-03-29T17:10:07.276Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "642470f16cb507653ed91d29"
+  },
+  "cart": {
+    "items": {
+      "64058b48bf965f43d9a06809": {
+        "item": {
+          "_id": "64058b48bf965f43d9a06809",
+          "name": "Traditional Fried Chicken",
+          "category": "Chicken",
+          "price": 10,
+          "description": "8 Chicken Drumsticks",
+          "image": "../assets/img/menu/chicken/1.jpg",
+          "status": null
+        },
+        "qty": 1,
+        "price": 10,
+        "status": "Processing"
+      },
+      "6404ada6bab3fc49fbf79fec": {
+        "item": {
+          "_id": "6404ada6bab3fc49fbf79fec",
+          "name": "Bolognese Spaghetti",
+          "category": "Pasta",
+          "price": 6.75,
+          "description": "Tomato Sauce, Ground Beef",
+          "image": "../assets/img/menu/pasta/1.jpg",
+          "status": null
+        },
+        "qty": 2,
+        "price": 13.5,
+        "status": "Processing"
+      },
+      "6404ae31bab3fc49fbf79fed": {
+        "item": {
+          "_id": "6404ae31bab3fc49fbf79fed",
+          "name": "Creamy Italian Pasta",
+          "category": "Pasta",
+          "price": 9,
+          "description": "Creamy Sauce, Mushroom",
+          "image": "../assets/img/menu/pasta/2.jpg"
+        },
+        "qty": 1,
+        "price": 9,
+        "status": "Processing"
+      }
+    },
+    "totalQty": 4,
+    "totalPrice": 32.5
+  },
+  "table": 4,
+  "checkout": {
+    "$date": "2023-03-29T17:29:56.757Z"
+  },
+  "status": "Completed",
+  "checkin": {
+    "$date": "2023-03-29T17:10:09.696Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6426b65a5631c037c92cb15f"
+  },
+  "cart": {
+    "items": {
+      "6404a7f2bab3fc49fbf79fe2": {
+        "item": {
+          "_id": "6404a7f2bab3fc49fbf79fe2",
+          "name": "Cheese Potato Burger",
+          "category": "Burger",
+          "price": 5,
+          "description": "Beef, Potato, Cheese, Salad",
+          "image": "../assets/img/menu/burger/1.jpg",
+          "status": null
+        },
+        "qty": 1,
+        "price": 5,
+        "status": "Processing"
+      },
+      "64058bdebf965f43d9a0680a": {
+        "item": {
+          "_id": "64058bdebf965f43d9a0680a",
+          "name": "Korean Fried Chicken",
+          "category": "Chicken",
+          "price": 11.5,
+          "description": "Chicken Breasts with Gochujang Sauce",
+          "image": "../assets/img/menu/chicken/2.jpg"
+        },
+        "qty": 1,
+        "price": 11.5,
+        "status": "Processing"
+      },
+      "64058280bf965f43d9a06800": {
+        "item": {
+          "_id": "64058280bf965f43d9a06800",
+          "name": "Pizza Veggie Mania",
+          "category": "Pizza",
+          "price": 13.5,
+          "description": "Bell Pepper, Pineapple, Olive, Mushroom",
+          "image": "../assets/img/menu/pizza/2.jpg"
+        },
+        "qty": 1,
+        "price": 13.5,
+        "status": "Processing"
+      },
+      "64059030bf965f43d9a06811": {
+        "item": {
+          "_id": "64059030bf965f43d9a06811",
+          "name": "Italian Negroni Cocktail",
+          "category": "Drinks",
+          "price": 8.25,
+          "description": "Gin, Sweet Vermouth, Campari, Orange",
+          "image": "../assets/img/menu/drinks/4.jpg"
+        },
+        "qty": 1,
+        "price": 8.25,
+        "status": "Processing"
+      }
+    },
+    "totalQty": 4,
+    "totalPrice": 38.25
+  },
+  "table": 1,
+  "checkout": {
+    "$date": "2023-03-31T11:10:12.911Z"
+  },
+  "status": "Completed",
+  "checkin": {
+    "$date": "2023-03-31T10:30:50.584Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64272adc882d6173c936cdd6"
+  },
+  "cart": {
+    "items": {
+      "64058e7abf965f43d9a0680e": {
+        "item": {
+          "_id": "64058e7abf965f43d9a0680e",
+          "name": "Blue Lagoon Cocktail",
+          "category": "Drinks",
+          "price": 6.75,
+          "description": "Vodka, Blue Curacao, Lemonade",
+          "image": "../assets/img/menu/drinks/1.jpg"
+        },
+        "qty": 1,
+        "price": 6.75,
+        "status": "Processing"
+      },
+      "6404aa37bab3fc49fbf79fe7": {
+        "item": {
+          "_id": "6404aa37bab3fc49fbf79fe7",
+          "name": "Vietnamese Banh Mi",
+          "category": "Burger",
+          "price": 3.65,
+          "description": "Grilled Pork, Cucumber",
+          "image": "../assets/img/menu/burger/6.jpg"
+        },
+        "qty": 1,
+        "price": 3.65,
+        "status": "Processing"
+      }
+    },
+    "totalQty": 2,
+    "totalPrice": 10.4
+  },
+  "table": 2,
+  "checkout": {
+    "$date": "2023-03-31T18:48:05.527Z"
+  },
+  "status": "Completed",
+  "checkin": {
+    "$date": "2023-03-31T18:47:56.034Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64272cc37e4de9992e50b43c"
+  },
+  "cart": {
+    "items": {
+      "64058e7abf965f43d9a0680e": {
+        "item": {
+          "_id": "64058e7abf965f43d9a0680e",
+          "name": "Blue Lagoon Cocktail",
+          "category": "Drinks",
+          "price": 6.75,
+          "description": "Vodka, Blue Curacao, Lemonade",
+          "image": "../assets/img/menu/drinks/1.jpg"
+        },
+        "qty": 1,
+        "price": 6.75,
+        "status": "Processing"
+      },
+      "6405847cbf965f43d9a06804": {
+        "item": {
+          "_id": "6405847cbf965f43d9a06804",
+          "name": "Pizza Saigon Mania",
+          "category": "Pizza",
+          "price": 17.75,
+          "description": "Polony, Salted Egg, Corn",
+          "image": "../assets/img/menu/pizza/6.jpg"
+        },
+        "qty": 1,
+        "price": 17.75,
+        "status": "Processing"
+      }
+    },
+    "totalQty": 2,
+    "totalPrice": 24.5
+  },
+  "table": 7,
+  "checkout": {
+    "$date": "2023-03-31T18:56:15.623Z"
+  },
+  "status": "Completed",
+  "checkin": {
+    "$date": "2023-03-31T18:56:03.493Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64272d0825b788e68b6e7566"
+  },
+  "cart": {
+    "items": {
+      "6404a7f2bab3fc49fbf79fe2": {
+        "item": {
+          "_id": "6404a7f2bab3fc49fbf79fe2",
+          "name": "Cheese Potato Burger",
+          "category": "Burger",
+          "price": 5,
+          "description": "Beef, Potato, Cheese, Salad",
+          "image": "../assets/img/menu/burger/1.jpg",
+          "status": null
+        },
+        "qty": 2,
+        "price": 10,
+        "status": "Done"
+      },
+      "6404a97ebab3fc49fbf79fe3": {
+        "item": {
+          "_id": "6404a97ebab3fc49fbf79fe3",
+          "name": "Double Cheese Burger",
+          "category": "Burger",
+          "price": 6.25,
+          "description": "Beef, Double Cheese, Salad",
+          "image": "../assets/img/menu/burger/2.jpg",
+          "status": null
+        },
+        "qty": 1,
+        "price": 6.25,
+        "status": "Done"
+      },
+      "64058eeabf965f43d9a0680f": {
+        "item": {
+          "_id": "64058eeabf965f43d9a0680f",
+          "name": "Tommy's Margarita Cocktail",
+          "category": "Drinks",
+          "price": 7,
+          "description": "Tequila, Lime Juice",
+          "image": "../assets/img/menu/drinks/2.jpg"
+        },
+        "qty": 1,
+        "price": 7,
+        "status": "Done"
+      }
+    },
+    "totalQty": 4,
+    "totalPrice": 23.25
+  },
+  "table": 2,
+  "checkout": {
+    "$date": "2023-03-17T17:14:43.244Z"
+  },
+  "status": "Completed",
+  "checkin": {
+    "$date": "2023-03-17T17:10:03.953Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64272d1525b788e68b6e7567"
+  },
+  "cart": {
+    "items": {
+      "6404a7f2bab3fc49fbf79fe2": {
+        "item": {
+          "_id": "6404a7f2bab3fc49fbf79fe2",
+          "name": "Cheese Potato Burger",
+          "category": "Burger",
+          "price": 5,
+          "description": "Beef, Potato, Cheese, Salad",
+          "image": "../assets/img/menu/burger/1.jpg",
+          "status": null
+        },
+        "qty": 2,
+        "price": 10,
+        "status": "Done"
+      },
+      "6404a97ebab3fc49fbf79fe3": {
+        "item": {
+          "_id": "6404a97ebab3fc49fbf79fe3",
+          "name": "Double Cheese Burger",
+          "category": "Burger",
+          "price": 6.25,
+          "description": "Beef, Double Cheese, Salad",
+          "image": "../assets/img/menu/burger/2.jpg",
+          "status": null
+        },
+        "qty": 1,
+        "price": 6.25,
+        "status": "Done"
+      },
+      "64058eeabf965f43d9a0680f": {
+        "item": {
+          "_id": "64058eeabf965f43d9a0680f",
+          "name": "Tommy's Margarita Cocktail",
+          "category": "Drinks",
+          "price": 7,
+          "description": "Tequila, Lime Juice",
+          "image": "../assets/img/menu/drinks/2.jpg"
+        },
+        "qty": 1,
+        "price": 7,
+        "status": "Done"
+      }
+    },
+    "totalQty": 4,
+    "totalPrice": 23.25
+  },
+  "table": 2,
+  "checkout": {
+    "$date": "2023-03-18T17:14:43.244Z"
+  },
+  "status": "Completed",
+  "checkin": {
+    "$date": "2023-03-18T17:10:03.953Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6427389725b788e68b6e7568"
+  },
+  "cart": {
+    "items": {
+      "6404a7f2bab3fc49fbf79fe2": {
+        "item": {
+          "_id": "6404a7f2bab3fc49fbf79fe2",
+          "name": "Cheese Potato Burger",
+          "category": "Burger",
+          "price": 5,
+          "description": "Beef, Potato, Cheese, Salad",
+          "image": "../assets/img/menu/burger/1.jpg",
+          "status": null
+        },
+        "qty": 2,
+        "price": 10,
+        "status": "Done"
+      },
+      "6404a97ebab3fc49fbf79fe3": {
+        "item": {
+          "_id": "6404a97ebab3fc49fbf79fe3",
+          "name": "Double Cheese Burger",
+          "category": "Burger",
+          "price": 6.25,
+          "description": "Beef, Double Cheese, Salad",
+          "image": "../assets/img/menu/burger/2.jpg",
+          "status": null
+        },
+        "qty": 1,
+        "price": 6.25,
+        "status": "Done"
+      },
+      "64058eeabf965f43d9a0680f": {
+        "item": {
+          "_id": "64058eeabf965f43d9a0680f",
+          "name": "Tommy's Margarita Cocktail",
+          "category": "Drinks",
+          "price": 7,
+          "description": "Tequila, Lime Juice",
+          "image": "../assets/img/menu/drinks/2.jpg"
+        },
+        "qty": 1,
+        "price": 7,
+        "status": "Done"
+      }
+    },
+    "totalQty": 4,
+    "totalPrice": 23.25
+  },
+  "table": 2,
+  "checkout": {
+    "$date": "2023-02-18T17:14:43.244Z"
+  },
+  "status": "Completed",
+  "checkin": {
+    "$date": "2023-02-18T17:10:03.953Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "642738a225b788e68b6e7569"
+  },
+  "cart": {
+    "items": {
+      "6404a7f2bab3fc49fbf79fe2": {
+        "item": {
+          "_id": "6404a7f2bab3fc49fbf79fe2",
+          "name": "Cheese Potato Burger",
+          "category": "Burger",
+          "price": 5,
+          "description": "Beef, Potato, Cheese, Salad",
+          "image": "../assets/img/menu/burger/1.jpg",
+          "status": null
+        },
+        "qty": 2,
+        "price": 10,
+        "status": "Done"
+      },
+      "6404a97ebab3fc49fbf79fe3": {
+        "item": {
+          "_id": "6404a97ebab3fc49fbf79fe3",
+          "name": "Double Cheese Burger",
+          "category": "Burger",
+          "price": 6.25,
+          "description": "Beef, Double Cheese, Salad",
+          "image": "../assets/img/menu/burger/2.jpg",
+          "status": null
+        },
+        "qty": 1,
+        "price": 6.25,
+        "status": "Done"
+      },
+      "64058eeabf965f43d9a0680f": {
+        "item": {
+          "_id": "64058eeabf965f43d9a0680f",
+          "name": "Tommy's Margarita Cocktail",
+          "category": "Drinks",
+          "price": 7,
+          "description": "Tequila, Lime Juice",
+          "image": "../assets/img/menu/drinks/2.jpg"
+        },
+        "qty": 1,
+        "price": 7,
+        "status": "Done"
+      }
+    },
+    "totalQty": 4,
+    "totalPrice": 23.25
+  },
+  "table": 2,
+  "checkout": {
+    "$date": "2023-01-18T17:14:43.244Z"
+  },
+  "status": "Completed",
+  "checkin": {
+    "$date": "2023-01-18T17:10:03.953Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,331 @@
+<section id="menu">
+    <div class="container text">
+        <p class="title text-center">Menu</p>
+        {{#if session.cart }}
+        {{#unless (eq session.user.role 'chef')}}
+        <div class="text-center">
+            <p><strong>Total items: </strong>{{ session.cart.totalQty }}</p>
+        </div>
+        {{/unless}}
+        {{/if}}
+        <div class="card">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#menu1">Burgers</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" data-bs-toggle="tab" href="#menu2">Pasta</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" data-bs-toggle="tab" href="#menu3">Pizza</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" data-bs-toggle="tab" href="#menu4">Chicken</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" data-bs-toggle="tab" href="#menu5">Drinks</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane container active" id="menu1" role="tabpanel">
+                        <h1 class="text-center text-uppercase">Burgers</h1>
+                        <br>
+                        <br>
+                        <div class="row">
+                            {{#each burgers}}
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <div class="food-card food-card--vertical">
+                                    <div class="food-card_img">
+                                        <img src="{{image}}" alt="" {{#if (eq status 'Off'
+                                            )}}style="filter: grayscale(100%);" {{/if}}>
+                                    </div>
+                                    <div class="food-card_content">
+                                        <div class="food-card_title-section">
+                                            <a href="#!" class="food-card_title">{{name}}</a>
+                                            <a href="#!" class="food-card_author">{{category}}</a>
+                                        </div>
+                                        <div class="food-card_bottom-section">
+                                            <div class="space-between">
+                                                <div class="description">
+                                                    <span>{{description}}</span>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="space-between">
+                                                <div class="food-card_price">
+                                                    <span>{{price}}$</span>
+                                                </div>
+                                                <div class="food-card_order-count">
+                                                    <div class="input-group mb-3">
+                                                        {{#unless (eq status 'Off')}}
+                                                        <button class="btn btn-outline-secondary" id="{{_id}}">
+                                                            <a href="/add-item/{{_id}}">Add</a>
+                                                        </button>
+                                                        {{/unless}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                    <div class="tab-pane container fade" id="menu2" role="tabpanel">
+                        <h1 class="text-center text-uppercase">Pasta</h1>
+                        <br>
+                        <br>
+                        <div class="row">
+                            {{#each pastas}}
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <div class="food-card food-card--vertical">
+                                    <div class="food-card_img">
+                                        <img src="{{image}}" alt="" {{#if (eq status 'Off'
+                                            )}}style="filter: grayscale(100%);" {{/if}}>
+                                    </div>
+                                    <div class="food-card_content">
+                                        <div class="food-card_title-section">
+                                            <a href="#!" class="food-card_title">{{name}}</a>
+                                            <a href="#!" class="food-card_author">{{category}}</a>
+                                        </div>
+                                        <div class="food-card_bottom-section">
+                                            <div class="space-between">
+                                                <div class="description">
+                                                    <span>{{description}}</span>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="space-between">
+                                                <div class="food-card_price">
+                                                    <span>{{price}}$</span>
+                                                </div>
+                                                <div class="food-card_order-count">
+                                                    <div class="input-group mb-3">
+                                                        {{#unless (eq status 'Off')}}
+                                                        <button class="btn btn-outline-secondary" id="{{_id}}">
+                                                            <a href="/add-item/{{_id}}">Add</a>
+                                                        </button>
+                                                        {{/unless}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                    <div class="tab-pane container fade" id="menu3" role="tabpanel">
+                        <h1 class="text-center text-uppercase">Pizza</h1>
+                        <br>
+                        <br>
+                        <div class="row">
+                            {{#each pizzas}}
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <div class="food-card food-card--vertical">
+                                    <div class="food-card_img">
+                                        <img src="{{image}}" alt="" {{#if (eq status 'Off'
+                                            )}}style="filter: grayscale(100%);" {{/if}}>
+                                    </div>
+                                    <div class="food-card_content">
+                                        <div class="food-card_title-section">
+                                            <a href="#!" class="food-card_title">{{name}}</a>
+                                            <a href="#!" class="food-card_author">{{category}}</a>
+                                        </div>
+                                        <div class="food-card_bottom-section">
+                                            <div class="space-between">
+                                                <div class="description">
+                                                    <span>{{description}}</span>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="space-between">
+                                                <div class="food-card_price">
+                                                    <span>{{price}}$</span>
+                                                </div>
+                                                <div class="food-card_order-count">
+                                                    <div class="input-group mb-3">
+                                                        {{#unless (eq status 'Off')}}
+                                                        <button class="btn btn-outline-secondary" id="{{_id}}">
+                                                            <a href="/add-item/{{_id}}">Add</a>
+                                                        </button>
+                                                        {{/unless}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                    <div class="tab-pane container fade" id="menu4" role="tabpanel">
+                        <h1 class="text-center text-uppercase">Chicken</h1>
+                        <br>
+                        <br>
+                        <div class="row">
+                            {{#each chickens}}
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <div class="food-card food-card--vertical">
+                                    <div class="food-card_img">
+                                        <img src="{{image}}" alt="" {{#if (eq status 'Off'
+                                            )}}style="filter: grayscale(100%);" {{/if}}>
+                                    </div>
+                                    <div class="food-card_content">
+                                        <div class="food-card_title-section">
+                                            <a href="#!" class="food-card_title">{{name}}</a>
+                                            <a href="#!" class="food-card_author">{{category}}</a>
+                                        </div>
+                                        <div class="food-card_bottom-section">
+                                            <div class="space-between">
+                                                <div class="description">
+                                                    <span>{{description}}</span>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="space-between">
+                                                <div class="food-card_price">
+                                                    <span>{{price}}$</span>
+                                                </div>
+                                                <div class="food-card_order-count">
+                                                    <div class="input-group mb-3">
+                                                        {{#unless (eq status 'Off')}}
+                                                        <button class="btn btn-outline-secondary" id="{{_id}}">
+                                                            <a href="/add-item/{{_id}}">Add</a>
+                                                        </button>
+                                                        {{/unless}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                    <div class="tab-pane container fade" id="menu5" role="tabpanel">
+                        <h1 class="text-center text-uppercase">Drinks</h1>
+                        <br>
+                        <br>
+                        <div class="row">
+                            {{#each drinks}}
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <div class="food-card food-card--vertical">
+                                    <div class="food-card_img">
+                                        <img src="{{image}}" alt="" {{#if (eq status 'Off'
+                                            )}}style="filter: grayscale(100%);" {{/if}}>
+                                    </div>
+                                    <div class="food-card_content">
+                                        <div class="food-card_title-section">
+                                            <a href="#!" class="food-card_title">{{name}}</a>
+                                            <a href="#!" class="food-card_author">{{category}}</a>
+                                        </div>
+                                        <div class="food-card_bottom-section">
+                                            <div class="space-between">
+                                                <div class="description">
+                                                    <span>{{description}}</span>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="space-between">
+                                                <div class="food-card_price">
+                                                    <span>{{price}}$</span>
+                                                </div>
+                                                <div class="food-card_order-count">
+                                                    <div class="input-group mb-3">
+                                                        {{#unless (eq status 'Off')}}
+                                                        <button class="btn btn-outline-secondary" id="{{_id}}">
+                                                            <a href="/add-item/{{_id}}">Add</a>
+                                                        </button>
+                                                        {{/unless}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        {{#if items}}
+        <div class="container">
+            <table class="table">
+                <thead class="table-dark table-bordered">
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Dish</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each items}}
+                    <tr>
+                        <th scope="row">{{inc @index}}</th>
+                        <td>{{item.name}}</td>
+                        <td>{{price}}$</td>
+                        <td>{{qty}}</td>
+                        <td {{#if (eq status 'Processing' )}}style="color:Tomato" {{else}}style="color:green" {{/if}}>
+                            {{status}}</td>
+                        <td>
+                            {{#unless (eq status 'Done')}}
+                            <a href="/delete-item/{{item._id}}">
+                                <i class="fa-solid fa-circle-minus fa-xl" style=" color: Tomato;"></i>
+                            </a>
+                            {{/unless}}
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="col">Total</th>
+                        <th scope="col"></th>
+                        <th scope="col">{{totalPrice}}$</th>
+                        <th scope="col">{{totalQty}}</th>
+                        <th scope="col">
+                            <button class="btn btn-success" type="button" data-bs-toggle="modal"
+                                data-bs-target="#paymentModal">Checkout</button>
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        {{/if}}
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+    <form action="/payment/{{orderID}}" method="post">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Payment Processing</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Please make sure that all information is carefully checked</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <input type="submit" class="btn btn-danger" value="Confirm">
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
